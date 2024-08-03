@@ -23,7 +23,7 @@ function CountryCard ({ name, flag, altText}) {
     );  
 } 
 
-const API_URL = " https://xcountries-backend.azurewebsites.net/al";
+const API_URL = " https://xcountries-backend.azurewebsites.net/all";
 
 function Countries () {
     const [countries, setCountries] = useState([]);
