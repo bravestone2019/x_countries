@@ -36,7 +36,7 @@ function Countries () {
             console.log(jsonRes);
             setCountries(jsonRes);
            } catch(error) {
-            console.error("Error in fetching data", error);
+            console.error("Error fetching data", error);
            }
         };
         fetchData();
@@ -50,7 +50,7 @@ function Countries () {
             }}>
                 {countries.map((country) => (
                     <CountryCard key={country.abbr} name={country.name} flag={country.flag} altText={country.abbr}/>
-                ))};
+                ))}
         </div>
     );
 }
