@@ -23,7 +23,7 @@ function CountryCard ({ name, flag, altText}) {
     );  
 } 
 
-const API_URL = " https://xcountries-backend.azurewebsites.net/all";
+const API_URL = " https://xcountries-backend.azurewebsites.net/al";
 
 function Countries () {
     const [countries, setCountries] = useState([]);
@@ -35,8 +35,8 @@ function Countries () {
             const jsonRes = await response.json();
             console.log(jsonRes);
             setCountries(jsonRes);
-           } catch(error) {
-            console.error("Error fetching data", error);
+           } catch (error) {
+            console.error("Error fetching data: ");
            }
         };
         fetchData();
